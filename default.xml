@@ -6,7 +6,7 @@
 
   <project name="alchemy" path="alchemy"/>
 
-  <project name="ardupilot-disco-config" path="config">
+  <project name="arduplane-disco-config" path="config">
     <linkfile src="build.sh" dest="build.sh"/>
     <linkfile src="update.sh" dest="update.sh"/>
   </project>
