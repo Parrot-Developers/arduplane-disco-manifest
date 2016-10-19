@@ -45,18 +45,18 @@ For debian-based distributions (tested on debian 8):
         # apt-get install -f # if unmet dependencies are reported
         # apt-get install build-essential git curl pkg-config python3 autoconf
 
-### The *apm disco* workspace uses google repo and parrot alchemy
+### The *arduplane disco* workspace uses google repo and parrot alchemy
 
         $ mkdir -p ~/bin
         $ export PATH=~/bin:$PATH
         $ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
         $ chmod a+x ~/bin/repo
 
-### Create an APM Disco workspace
+### Create an ArduPlane Disco workspace
 
-        $ mkdir disco_apm
-        $ cd disco_apm
-        $ repo init -u https://github.com/Parrot-Developers/apm-disco-manifest.git
+        $ mkdir disco_arduplane
+        $ cd disco_arduplane
+        $ repo init -u https://github.com/Parrot-Developers/arduplane-disco-manifest.git
         $ repo sync
         $ ./build.sh all final -j5
 
