@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/Parrot-Developers/" name="github"/>
+  
+  <default remote="github" revision="master" sync-j="4"/>
+
+  <project name="alchemy" path="alchemy"/>
+
+  <project name="ardupilot-disco-config" path="config">
+    <linkfile src="build.sh" dest="build.sh"/>
+    <linkfile src="update.sh" dest="update.sh"/>
+  </project>
+
+  <project name="ardupilot" path="packages/ardupilot" revision="dev-disco-branch"/>
+  <project name="arduplane-disco-external" path="packages/external"/>
+  <project name="libapm-telemetry" path="packages/libapm-telemetry"/>
+  <project name="libfutils" path="packages/libfutils"/>
+  <project name="libiio" path="packages/libiio" revision="dev-parrot-master-branch" upstream="dev-parrot-master-branch"/>
+  <project name="libshdata" path="packages/libshdata"/>
+  <project name="mavlink" path="packages/mavlink" revision="dev-master-tracking-upstream-branch"/>
+  <project name="pymavlink" path="packages/pymavlink" revision="dev-disco-branch"/>
+  <project name="telemetry" path="packages/telemetry"/>
+  <project name="ulog" path="packages/ulog"/>
+</manifest>
