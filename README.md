@@ -58,9 +58,7 @@ For debian-based distributions (tested on debian 8):
         $ cd disco_arduplane
 
         $ repo init -u https://github.com/Parrot-Developers/arduplane-disco-manifest.git
-
-or for a specific release,
-
+	or for a specific release,
        	$ repo init -u https://github.com/Parrot-Developers/arduplane-disco-manifest.git -m releases/1.1.0.xml
 
         $ repo sync
