@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/Parrot-Developers/" name="github"/>
+
+  <default remote="github" revision="master" sync-j="4"/>
+
+  <project name="alchemy" revision="67ab28c858fc9dd4b69819646b47a8d35ba25822"/>
+  <project name="arduplane-disco-config" path="config" revision="050d20221d36292756dc3e4cf5d0dc42e9f646fa">
+    <linkfile dest="build.sh" src="build.sh"/>
+    <linkfile dest="update.sh" src="update.sh"/>
+  </project>
+  <project name="ardupilot" path="packages/ardupilot" revision="db5dff43447399173d81481224b32dd464bd2c53"/>
+  <project name="arduplane-disco-external" path="packages/external" revision="175c70adc9f8b9b9b04003b9c15c24f78f182f84"/>
+  <project name="libapm-telemetry" path="packages/libapm-telemetry" revision="91b33a88593dc4e97db0578b4a48f5fa500d2acd"/>
+  <project name="libfutils" path="packages/libfutils" revision="930f6ce51c549e29a944ecf3115da5fd65d3edc9"/>
+  <project name="libiio" path="packages/libiio" revision="fb9624e2ec37b3d6d7877566956b5ab324ef34f8"/>
+  <project name="libshdata" path="packages/libshdata" revision="fac66d3f0d3c870c32203c32f28adcad768a4e92"/>
+  <project name="mavlink" path="packages/mavlink" revision="5caca1e7b0dae2b760bfbfc777a0ed7e8d5f8e42"/>
+  <project name="pymavlink" path="packages/pymavlink" revision="cdeef36245bd21a4b05e7644ca3e8994a67ca9d5"/>
+  <project name="telemetry" path="packages/telemetry" revision="d66b4e0ac0d04ccd6cf7e6341e62f305d6ebeeb6"/>
+  <project name="ulog" path="packages/ulog" revision="151ed7bdb4862e92d2451f2357690c65ad821ab1"/>
+</manifest>
