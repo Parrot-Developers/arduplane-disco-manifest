@@ -70,9 +70,9 @@ The latest stable version can be downloaded from the ardupilot [website][Firmwar
 
 ## How to push an updated version of ArduPlane on a Disco
 
-### Old Disco firmware ###
+### Old Disco firmwares ###
 
-These instructions are for old version of Disco firmware.
+These instructions are for old versions of Disco firmware.
 
 First connect to the drone's wifi network, it's name as the form DISCO-XXXXXX.
 It will give you an address on the 192.168.42.0/24 network, the address of the
@@ -90,7 +90,7 @@ send apm-plane-disco in the right place by executing:
 An error regarding the APM directory creation is normal and can be safely
 ignored.
 
-### Recent firmware ###
+### Recent firmwares ###
 
 First connect to the drone's wifi network, named DISCO-XXXXXX. It will give you an address on the 192.168.42.0/24 network, the address of the drone is 192.168.42.1. Then connect to the drone's ftp server and upload the file arduplane into the folder internal\_000/ardupilot/.
 
