@@ -34,7 +34,7 @@ If ArduPlane was already running, it will be restarted.
 Now you can interact with ArduPlane the way you want, please refer to the
 [ArduPlane documentation][ArduPlane] for more information.
 
-## How to build ArduPlane for Parrot Disco
+## How to build ArduPlane for Parrot Disco (optional)
 
 ### Needed packages
 
@@ -64,7 +64,15 @@ For debian-based distributions (tested on debian 8):
         $ repo sync
         $ ./build.sh all final -j5
 
+## How to download the latest version of ArduPlane
+
+The latest stable version can be downloaded from the ardupilot [website][Firmware]. Just download the file named *arduplane*.
+
 ## How to push an updated version of ArduPlane on a Disco
+
+### Old Disco firmware ###
+
+These instructions are for old version of Disco firmware.
 
 First connect to the drone's wifi network, it's name as the form DISCO-XXXXXX.
 It will give you an address on the 192.168.42.0/24 network, the address of the
@@ -82,7 +90,11 @@ send apm-plane-disco in the right place by executing:
 An error regarding the APM directory creation is normal and can be safely
 ignored.
 
-## Troobleshooting
+### Recent firmware ###
+
+First connect to the drone's wifi network, named DISCO-XXXXXX. It will give you an address on the 192.168.42.0/24 network, the address of the drone is 192.168.42.1. Then connect to the drone's ftp server and upload the file arduplane into the folder internal\_000/ardupilot/.
+
+## Troubleshooting
 
 ### wget-ing the toolchains fails with a security warning
 
@@ -91,3 +103,4 @@ ignored.
 [Disco]:https://www.parrot.com/fr/drones/parrot-disco-fpv#-parrot-disco-fpv
 [ADB]:https://developer.android.com/studio/command-line/adb.html
 [ArduPlane]:http://ardupilot.org/plane/
+[Firmware]:http://firmware.ardupilot.org/Plane/stable/disco/
